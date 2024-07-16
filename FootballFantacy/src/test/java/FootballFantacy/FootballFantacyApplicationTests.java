@@ -1,0 +1,13 @@
+package FootballFantacy;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class FootballFantacyApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}
