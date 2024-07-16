@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: twit-app-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: twit-app
+  template:
+    metadata:
+      labels:
+        app: twit-app
+    spec:
+      containers:
+        - name: twit-app
+          image: binodleo/twit-app-image:latest
+          ports:
+            - containerPort: 8070
+          env:
+            - name: SPRING_PROFILES_ACTIVE
+              value: "dev"
