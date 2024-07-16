@@ -2,10 +2,10 @@ version: '3.8'
 
 services:
   springboot-app:
-    image: twit-app-image:latest
-    container_name: twit-app-container
+    image: webflix-image:latest
+    container_name: webflix-app-container
     ports:
-      - "8071:8070"
+      - "8072:8072"
     environment:
       SPRING_PROFILES_ACTIVE: dev # Optional: Set the active Spring profile
     networks:

@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>app</groupId>
-    <artifactId>demo-app-post</artifactId>
+    <artifactId>twit-app</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>demo-app-post</name>
-    <description>demo-app-post</description>
+    <name>twit-app</name>
+    <description>twit-app</description>
     <url/>
     <licenses>
         <license/>
