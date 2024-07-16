@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  springboot-app:
+    image: post-app-image:latest
+    container_name: post-app-container
+    ports:
+      - "8071:8070"
+    environment:
+      SPRING_PROFILES_ACTIVE: dev # Optional: Set the active Spring profile
+    networks:
+      - app-net
+
+networks:
+  app-net:
