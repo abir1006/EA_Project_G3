@@ -10,7 +10,7 @@ FROM openjdk:17-jdk-alpine
 # Expose the port your application will run on
 EXPOSE 8080
 
-ADD target/demo-app-post-0.0.1-SNAPSHOT.jar twit-app.jar
+ADD target/twit-app-0.0.1-SNAPSHOT.jar twit-app.jar
 
 # Command to run the application
 
