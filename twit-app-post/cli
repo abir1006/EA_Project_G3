@@ -1,0 +1,22 @@
+
+
+#docker tag twit-app-image:latest binodleo/twit-app-image:latest
+
+
+docker push binodleo/twit-app-image:latest
+
+kubectl apply -f deployment.yaml
+
+kubectl apply -f twit-app-service.yaml
+
+
+kubectl describe service twit-app-service
+
+
+curl http://192.168.49.2:31464
+
+kubectl describe pod twit-app-deployment-5cb645b8c4-vk6vk
+
+kubectl exec -it twit-app-deployment-5cb645b8c4-vk6vk -- /bin/sh
+
+

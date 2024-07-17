@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: twit-k8s
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: twit-app
+  template:
+    metadata:
+      labels:
+        app: twit-app
+    spec:
+      containers:
+        - name: twit-app
+          image: binodleo/twit-app:1.0
+          ports:
+            - containerPort: 8080
